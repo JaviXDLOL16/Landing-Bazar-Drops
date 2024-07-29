@@ -28,9 +28,10 @@ export default function Footer() {
             <div className={styles.contIcons}>
                 <p>Copyright 2024 Javier</p>
                 <div className={styles.Icons}>
-                    <img src={Instagram} alt="Instagram" />
-                    <img src={Facebook} alt="Facebook" />
-                    <img src={Twitter} alt="Twitter" />
+                    <a href="https://www.instagram.com/devmovoficial"><img src={Instagram} alt="Instagram" /></a>
+                    <a href="https://www.facebook.com/profile.php?id=61562283522934&mibextid=LQQJ4d"> <img src={Facebook} alt="Facebook" /></a>
+                    <a href="https://www.tiktok.com/@devmovoficial?_t=8o8zqv1r8Cr&_r=1"><img src={Twitter} alt="Twitter" />
+                    </a>
                 </div>
             </div>
         </div>
