@@ -1,0 +1,439 @@
+.contSearch {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  padding-bottom: 150px;
+}
+
+.image {
+  width: 100%;
+  max-width: 370px;
+}
+
+.contImage {
+  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+.contText {
+  padding-left: 2.5%;
+  width: 60%;
+  padding-right: 2.5%;
+}
+
+.contText p:first-child {
+  width: 100%;
+  max-width: 880px;
+  font-size: 96px;
+  color: var(--color-white);
+  font-weight: 900;
+  margin: 0;
+}
+
+.contText span {
+  color: var(--color-blue3);
+  font-weight: 900;
+}
+
+.contText p:nth-child(2) {
+  color: var(--color-default400);
+  font-size: 64px;
+  font-weight: 900;
+  margin: 0;
+  margin-top: 30px;
+}
+
+.contText p:nth-child(3) {
+  color: var(--color-white);
+  font-size: 40px;
+  font-weight: bold;
+  margin: 0;
+  margin-top: 30px;
+  text-align: justify;
+  padding-right: 5%;
+}
+
+.backgroundLight {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translateX(-50%);
+  width: 270px;
+  height: 277px;
+  border-radius: 100;
+  background: linear-gradient(
+    to bottom,
+    #3f8ae2 0%,
+    #0075f2 44%,
+    #00206e 77%,
+    #0b023b 100%
+  );
+  filter: blur(150px);
+  z-index: -2;
+}
+
+.shopping {
+  z-index: -2;
+  position: absolute;
+  bottom: 72%;
+  left: 17.7vw;
+  animation: float1 6s ease-in-out infinite;
+  width: 140px;
+}
+
+.clothes {
+  z-index: -2;
+  position: absolute;
+  bottom: 74%;
+  left: 9.5vw;
+  animation: float2 6s ease-in-out infinite;
+}
+
+.trousers {
+  z-index: -2;
+  position: absolute;
+  bottom: 56%;
+  left: 18vw;
+  animation: float3 6s ease-in-out infinite;
+}
+
+.Recycle {
+  z-index: -2;
+  position: absolute;
+  bottom: 57%;
+  left: 7vw;
+  animation: float4 6s ease-in-out infinite;
+}
+
+@keyframes float1 {
+  0% {
+    transform: translateY(-5) translateX(-4);
+  }
+  50% {
+    transform: translateY(-15px) translateX(15px);
+  }
+  100% {
+    transform: translateY(0) translateX(0);
+  }
+}
+
+@keyframes float2 {
+  0% {
+    transform: translateY(-3) translateX(5);
+  }
+  50% {
+    transform: translateY(-10px) translateX(-20px);
+  }
+  100% {
+    transform: translateY(0) translateX(0);
+  }
+}
+
+@keyframes float3 {
+  0% {
+    transform: translateY(5) translateX(0);
+  }
+  50% {
+    transform: translateY(-10px) translateX(10px);
+  }
+  100% {
+    transform: translateY(0) translateX(0);
+  }
+}
+
+@keyframes float4 {
+  0% {
+    transform: translateY(0) translateX(0);
+  }
+  50% {
+    transform: translateY(-8px) translateX(-18px);
+  }
+  100% {
+    transform: translateY(0) translateX(0);
+  }
+}
+
+@media (max-width: 1600px) {
+  .clothes,
+  .trousers,
+  .Recycle {
+    width: 140px;
+  }
+
+  .shopping {
+    width: 120px;
+    bottom: 66%;
+    left: 16.5vw;
+  }
+  .backgroundLight {
+    top: 55%;
+  }
+
+  .clothes {
+    bottom: 62%;
+    left: 5.2vw;
+  }
+
+  .Recycle {
+    bottom: 52%;
+    left: 5.2vw;
+  }
+  .trousers {
+    bottom: 50%;
+    left: 15.5vw;
+  }
+}
+
+@media (max-width: 1499px) {
+  .shopping {
+    width: 120px;
+    bottom: 57%;
+    left: 15vw;
+  }
+
+  .clothes {
+    bottom: 56%;
+    left: 3.7vw;
+  }
+
+  .Recycle {
+    bottom: 46%;
+    left: 3.7vw;
+  }
+  .trousers {
+    bottom: 44%;
+    left: 14vw;
+  }
+}
+
+@media (max-width: 1330px) {
+  .contText p:first-child {
+    font-size: 75px;
+    text-align: center;
+  }
+
+  .contText p:nth-child(2) {
+    font-size: 50px;
+    text-align: center;
+  }
+
+  .backgroundLight {
+    top: 55%;
+    width: 250px;
+    height: 250px;
+  }
+
+  .shopping {
+    bottom: 67%;
+    left: 17vw;
+  }
+
+  .clothes {
+    bottom: 65%;
+    left: 3.5vw;
+  }
+
+  .Recycle {
+    bottom: 54%;
+    left: 3.5vw;
+  }
+  .trousers {
+    bottom: 52%;
+    left: 16vw;
+  }
+}
+@media (max-width: 1200px) {
+  .contText p:first-child {
+    font-size: 80px;
+    text-align: center;
+  }
+
+  .contText p:nth-child(2) {
+    font-size: 50px;
+    text-align: center;
+  }
+
+  .contText p:nth-child(3) {
+    font-size: 30px;
+    padding-left: 5%;
+  }
+
+  .backgroundLight {
+    top: 52%;
+    width: 250px;
+    height: 250px;
+  }
+
+  .clothes,
+  .trousers,
+  .Recycle {
+    width: 120px;
+  }
+  .shopping {
+    width: 100px;
+    bottom: 68%;
+    left: 16vw;
+  }
+
+  .clothes {
+    bottom: 65%;
+    left: 3.5vw;
+  }
+
+  .Recycle {
+    bottom: 54%;
+    left: 3.5vw;
+  }
+  .trousers {
+    bottom: 52%;
+    left: 15vw;
+  }
+}
+
+/*@media only screen and (min-width: 795px) and (max-width: 992px) {
+}*/
+
+@media (max-width: 992px) {
+  .contSearch {
+    padding-top: 60px;
+  }
+
+  .contText p:first-child {
+    font-size: 50px;
+  }
+
+  .contText p:nth-child(2) {
+    font-size: 40px;
+  }
+
+  .contText p:nth-child(3) {
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .backgroundLight {
+    top: 45%;
+    width: 250px;
+    height: 250px;
+  }
+
+  .clothes,
+  .trousers,
+  .Recycle {
+    width: 120px;
+  }
+
+  .shopping {
+    width: 81px;
+  }
+
+  .shopping {
+    bottom: 77%;
+    left: 19vw;
+  }
+
+  .clothes {
+    bottom: 74%;
+    left: 2.7vw;
+  }
+
+  .Recycle {
+    bottom: 62%;
+    left: 2.7vw;
+  }
+  .trousers {
+    bottom: 60%;
+    left: 17vw;
+  }
+  .contImage {
+    width: 50%;
+  }
+
+  .contText {
+    width: 50%;
+  }
+}
+
+@media (max-width: 937px) {
+  .shopping {
+    bottom: 65%;
+    left: 19vw;
+  }
+
+  .backgroundLight {
+    top: 55%;
+  }
+
+  .clothes {
+    bottom: 66%;
+    left: 2.7vw;
+  }
+
+  .Recycle {
+    bottom: 54%;
+    left: 2.7vw;
+  }
+  .trousers {
+    bottom: 52%;
+    left: 17vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .contSearch {
+    padding-bottom: 50px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contImage,
+  .contText {
+    width: 100%;
+  }
+
+  .contText {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .backgroundLight {
+    width: 220px;
+    height: 220px;
+    top: 30%;
+    left: 50%;
+  }
+
+  .shopping,
+  .clothes,
+  .trousers,
+  .Recycle {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .contSearch {
+    padding-bottom: 30px;
+  }
+  .contText p:first-child {
+    font-size: 40px;
+  }
+
+  .contText p:nth-child(2) {
+    font-size: 30px;
+  }
+
+  .contText p:nth-child(3) {
+    font-size: 20px;
+  }
+
+  .contText {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  .contImage {
+    width: 70%;
+  }
+}

@@ -1,0 +1,123 @@
+/* Estilo base */
+.contText {
+  display: flex;
+  flex-wrap: wrap; /* Permite que los elementos se ajusten en dispositivos pequeños */
+  width: 90%;
+  gap: 90px;
+  margin: 0 auto;
+  padding-bottom: 1%;
+}
+
+.contText p {
+  color: var(--color-white);
+}
+
+.contText p:first-of-type {
+  font-weight: 900;
+  font-size: 30px;
+  margin: 0;
+  width: 35%;
+}
+
+.contTerms,
+.contContact,
+.contCompany {
+  flex: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  margin: 0;
+  gap: 15px;
+}
+
+.contTerms p:first-of-type {
+  width: 50%;
+}
+
+.contTerms p:nth-of-type(2),
+.contContact p:nth-of-type(n + 2),
+.contCompany p:nth-of-type(n + 2) {
+  font-size: 28px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.contIcons {
+  border-top: 2px solid var(--color-dark1);
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+}
+
+.contIcons p:first-of-type {
+  font-size: 24px;
+  color: var(--color-default400);
+  font-weight: 200;
+  margin: 0 auto;
+}
+
+.Icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.Icons img {
+  width: 56px;
+  cursor: pointer;
+}
+
+/* Media Queries */
+
+/* Tablets y dispositivos más pequeños */
+@media (max-width: 768px) {
+  .contText {
+    flex-direction: column;
+    align-items: center;
+    text-align: center; /* Centra el texto dentro de los elementos */
+    gap: 20px;
+  }
+
+  .contText p:first-of-type {
+    width: 100%;
+    font-size: 24px;
+  }
+
+  .contTerms,
+  .contContact,
+  .contCompany {
+    align-items: center;
+  }
+
+  .contTerms p:first-of-type,
+  .contTerms p:nth-of-type(2),
+  .contContact p:nth-of-type(n + 2),
+  .contCompany p:nth-of-type(n + 2) {
+    font-size: 24px;
+  }
+}
+
+/* Móviles */
+@media (max-width: 480px) {
+  .contIcons {
+    flex-direction: column;
+    height: auto;
+    padding: 20px 5%;
+    text-align: center;
+  }
+
+  .contIcons p:first-of-type {
+    margin-bottom: 20px;
+  }
+
+  .Icons {
+    width: 100%;
+    justify-content: space-evenly;
+  }
+
+  .Icons img {
+    width: 40px;
+  }
+}

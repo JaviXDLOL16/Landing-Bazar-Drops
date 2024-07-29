@@ -1,0 +1,30 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-dark);
+  font-family: "Mulish", sans-serif;
+}
+
+:root {
+  --color-gray: #27272a;
+  --color-gray2: #a1a1aa;
+  --color-dark: #0b0a11;
+  --color-dark1: #1e1d24;
+  --color-dark2: #17161a;
+  --color-dark3: #434348;
+  --color-white: #ffffff;
+  --color-blue: #0075f2;
+  --color-blue2: #00206e;
+  --color-blue3: #3f8ae2;
+  --color-blue4: #0e3c71;
+  --color-blue5: #057eff;
+  --color-red: #d63535;
+  --color-red2: #e90000;
+  --color-red3: #7d3a3e;
+  --color-green: #68ac50;
+  --color-default400: #a1a1aa;
+  --color-default800: #27272a;
+  --color-green2: #39522f;
+  --color-input-outline: #3f3f46;
+  --color-input-error: #d63535;
+}

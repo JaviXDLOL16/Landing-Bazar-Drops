@@ -1,0 +1,217 @@
+.ContentCompany {
+  padding-bottom: 12%;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ContImageTitle {
+  display: none;
+  width: 40%;
+  justify-content: center;
+  align-items: end;
+}
+.ContData {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.ContText {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 5%;
+  width: 50%;
+}
+
+.ContentCompany p:nth-child(2) {
+  font-size: 96px;
+  color: var(--color-white);
+  font-weight: 900;
+  text-align: center;
+  margin: 0;
+}
+
+.ContentCompany span {
+  color: var(--color-blue3);
+  font-weight: 900;
+}
+
+.ContentCompany p:nth-child(3) {
+  font-size: 64px;
+  font-weight: 900;
+  color: var(--color-default400);
+  text-align: justify;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin: 0;
+}
+
+.ContText p:nth-child(1) {
+  font-size: 40px;
+  font-weight: bold;
+  color: var(--color-white);
+  text-align: justify;
+}
+
+.ContImage {
+  margin-right: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  width: 45%;
+}
+
+.womanClothes {
+  width: 100%;
+  max-width: 700px;
+}
+
+.backgroundLight {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1600px;
+  height: 125px;
+  background: linear-gradient(
+    to bottom,
+    #3f8ae2 0%,
+    #0075f2 44%,
+    #00206e 77%,
+    #0b023b 100%
+  );
+  filter: blur(150px);
+  z-index: -2;
+}
+
+@media (max-width: 1200px) {
+  .ContentCompany p:nth-child(2) {
+    font-size: 80px;
+  }
+
+  .ContentCompany p:nth-child(3) {
+    font-size: 48px;
+  }
+
+  .ContText p:nth-child(1) {
+    font-size: 32px;
+  }
+
+  .backgroundLight {
+    width: 1200px;
+    height: 100px;
+  }
+
+  .womanClothes {
+    max-width: 550px;
+  }
+}
+
+@media (max-width: 992px) {
+  .ContentCompany {
+    padding-top: 10%;
+  }
+  .ContentCompany p:nth-child(2) {
+    font-size: 50px;
+  }
+
+  .ContentCompany p:nth-child(3) {
+    margin-top: 50px;
+    font-size: 40px;
+    text-align: center;
+  }
+
+  .ContText p:nth-child(1) {
+    font-size: 25px;
+    text-align: center;
+  }
+
+  .backgroundLight {
+    width: 900px;
+    height: 80px;
+  }
+
+  .womanClothes {
+    max-width: 550px;
+  }
+
+  .ContData {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ContImageTitle {
+    display: flex;
+    width: 90%;
+    margin-right: 5%;
+    margin-left: 5%;
+    justify-content: center;
+    margin-bottom: 5%;
+  }
+  .ContImage {
+    display: none;
+  }
+
+  .ContText {
+    width: 90%;
+    margin: 0;
+  }
+
+  .ContentCompany {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .womanClothes {
+    max-width: 400px;
+  }
+
+  .backgroundLight {
+    top: 45%;
+    width: 700px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 576px) {
+  .ContentCompany {
+    padding-top: 50px;
+  }
+  .ContentCompany p:nth-child(2) {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 25px;
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+
+  .ContentCompany p:nth-child(3) {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .ContText p:nth-child(1) {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .ContImageTitle {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .womanClothes {
+    max-width: 330x;
+  }
+
+  .ContData {
+    flex-direction: column;
+  }
+}

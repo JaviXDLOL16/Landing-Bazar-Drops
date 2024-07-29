@@ -1,0 +1,153 @@
+/* ContentCards.module.css */
+
+.container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-bottom: 30px;
+}
+
+.backgroundLight {
+  position: absolute;
+  bottom: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1600px;
+  height: 165px;
+  background: linear-gradient(
+    to bottom,
+    #3f8ae2 0%,
+    #0075f2 44%,
+    #00206e 77%,
+    #0b023b 100%
+  );
+  filter: blur(150px);
+  z-index: -2;
+}
+
+.backgroundWave {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 1840px;
+  height: 1000px;
+  z-index: -1;
+}
+
+.contTitle {
+  padding-left: 2%;
+  max-width: 1000px;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+  margin: 0;
+}
+
+.contTitle p:first-of-type {
+  font-size: 4vw;
+  font-weight: 900;
+  color: var(--color-white);
+  margin: 0;
+}
+
+.contTitle p:nth-of-type(2) {
+  font-size: 2.5vw;
+  font-weight: 900;
+  color: var(--color-default400);
+  margin: 0;
+  margin-top: 50px;
+}
+
+.contTitle span {
+  color: var(--color-blue3);
+}
+
+.contButtonApp {
+  margin-top: 45px;
+  margin-left: 10vw;
+  display: flex;
+}
+
+.textQuestion {
+  font-size: 4vw;
+  font-weight: 900;
+  color: var(--color-white);
+  padding-left: 2%;
+  margin-top: 70px;
+}
+
+.textQuestion span {
+  color: var(--color-blue3);
+}
+
+.contCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 100px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding-bottom: 20px;
+  }
+  .backgroundWave {
+    min-width: 1200px;
+    height: 1000px;
+  }
+
+  .contTitle p:first-of-type {
+    font-size: 6vw;
+    text-align: center;
+  }
+
+  .contTitle p:nth-of-type(2) {
+    font-size: 4vw;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .textQuestion {
+    font-size: 6vw;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .contButtonApp {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 5%;
+    margin: 0;
+  }
+  .contCards {
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding-bottom: 10px;
+  }
+  .backgroundWave {
+    min-width: 900px;
+    height: 600px;
+  }
+
+  .contTitle p:first-of-type {
+    font-size: 8vw;
+  }
+
+  .contTitle p:nth-of-type(2) {
+    font-size: 5vw;
+  }
+
+  .textQuestion {
+    font-size: 8vw;
+  }
+}
